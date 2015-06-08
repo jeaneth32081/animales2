@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+<title>Animales</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="acciones.js"></script>
+
+<script src="phonegap.js"></script>
+<style>
+#principal {
+	position:absolute;
+	left:opx;
+	top:0;
+	width:100%;
+	background-color:#6FF;
+}
+#pantalla {
+	float:left;
+	width:100%;
+	height:25%;
+	background:#0CF;
+	text-align:center;
+	font-size:4em;
+	font-weight:bold;
+	font-family:Verdana, Geneva, sans-serif;
+}
+#teclado {
+	float:left;
+	width:100%;
+	height:75%;
+}
+.nota {
+	position:relative;
+	float:left;
+	height:90%;
+	outline:#000 solid 1px;
+	background:#FF0;
+	width:50%;
+	text-align:center;
+}
+.textonota {
+	position:relative;
+	top:80%;
+	text-align:center;
+	font-size:2em;
+	font-weight:bold;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#00F;
+}
+.tocada {
+	color:#300;
+	background:#F00; 
+	outline: solid 1px #FF0000;
+}
+</head>
+</style> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header" style="background-image: url(Imagenes%20animales/FONDO.jpg)">
+		<h1><font color="#00FFFF" size="+2" face="Arial, Helvetica, sans-serif">Animales</font></h1>
+	</div>
+	<div data-role="content" style="background-image: url(Imagenes%20animales/FONDOCONTEN.jpg)">	
+		<ul data-role="listview">
+         <div align="center" data-role="controlgroup" data-type="vertical">
+            <div style="width:40%">
+    <a href="#page2" data-role="button" id="botn1">
+    Domesticos
+    </a>
+    <a href="#page3" data-role="button" id="botn2">
+    Salvajes
+    </a> 
+		</ul>		
+	</div>
+	<div data-role="footer" style="background-image: url(Imagenes%20animales/FONDO.jpg)">
+		<h4><font color="#00FFFF" size="+2" face="Arial, Helvetica, sans-serif">Esteban Eslava Quiroz </font></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2"  data-add-back-btn="true">
+	<div data-role="header" style="background-image: url(Imagenes%20animales/FONDO.jpg)">
+		<h1><font color="#00FFFF" size="+2" face="Arial, Helvetica, sans-serif">DOMESTICOS</font></h1>
+	</div>	
+	<div id="teclado">
+    
+    <div id="Gato" class="nota">
+    <div class="textnota">
+    <img src="Imagenes animales/gato.jpg" width="50%" height="205">
+    </div>
+    </div>
+    
+    <div id="Caballo" class="nota">
+    <div class="textonota">
+    <img src="Imagenes animales/caballo.jpg" width="50%" height="200">
+                </div>
+            </div>
+            
+            
+    <div id="Pajaro" class="nota">
+         <div class="textonota">
+<img src="Imagenes animales/pajaro.jpg" width="50%" height="200">
+                </div>
+            </div>
+            
+            <div id="Perro" class="nota">
+            <div class="textonota">
+           <img src="Imagenes animales/perro.jpg" width="50%" height="200">
+                </div>
+            </div>
+            
+              <div id="Pollo" class="nota">
+            <div class="textonota">
+            <img src="Imagenes animales/pollo.jpg" width="50%" height="200">
+                </div>
+            </div>
+            
+                <div id="Conejo" class="nota">
+            	<div class="textonota">
+                <img src="Imagenes animales/conejo.jpg" width="50%" height="200">
+                </div>
+            </div>
+</div>		
+	<div data-role="footer" style="background-image: url(Imagenes%20animales/FONDO.jpg)">
+		<h4><font color="#00FFFF" size="+2" face="Arial, Helvetica, sans-serif">Esteban Eslava Quiroz</font></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true">
+	<div data-role="header" style="background-image: url(Imagenes%20animales/FONDO.jpg)">
+		<h1><font color="#00FFFF" size="+2" face="Arial, Helvetica, sans-serif">SALVAJES</font></h1>
+	</div>	
+	<div id="teclado">
+    
+    <div id="elefante" class="nota">
+    <div class="textnota">
+    <img src="Imagenes animales/elefante.jpg" width="50%" height="204">
+    </div>
+    </div>
+    
+    <div id="leon" class="nota">
+    <div class="textonota">
+    <img src="Imagenes animales/leon.jpg" width="50%" height="200">
+                </div>
+            </div>
+            
+            
+    <div id="oso" class="nota">
+         <div class="textonota">
+<img src="Imagenes animales/oso.jpg" width="50%" height="199">
+                </div>
+            </div>
+            
+            <div id="jirafa" class="nota">
+            <div class="textonota">
+           <img src="Imagenes animales/jirafa.jpg" width="50%" height="200">
+                </div>
+            </div>
+            
+              <div id="tigre" class="nota">
+            <div class="textonota">
+            <img src="Imagenes animales/tigre.jpg" width="50%" height="200">
+                </div>
+            </div>
+            
+                <div id="zorro" class="nota">
+            	<div class="textonota">
+                <img src="Imagenes animales/zorro.jpg" width="50%" height="200">
+                </div>
+            </div>	
+	</div>
+	<div data-role="footer" style="background-image: url(Imagenes%20animales/FONDO.jpg)">
+	<h4><font color="#00FFFF" size="+2" face="Arial, Helvetica, sans-serif">Esteban Eslava Quiroz</font></h4>
+	</div>
+</div>
+</body>
+</html>
